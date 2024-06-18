@@ -21,7 +21,6 @@ pip3 install --upgrade pip
 pip3 install --user virtualenv
 
 # Create Env
-cd plan2vec
 python3 -m venv venv
 # Activate env
 source venv/bin/activate
@@ -32,8 +31,6 @@ Then install the project dependencies as follows:
 ```
 pip3 install -r requirements.txt
 pip3 install geomloss
-cd mazelab
-pip3 install -e .
 export PYTHONPATH=<path_to>/one4all/:$PYTHONPATH
 ```
 
@@ -90,7 +87,7 @@ Make sure to put the relevant ```.glb``` and ```.navmesh``` files under the
 
 You should now be able to generate the pointnav episodes (we will use them for imagenav).
 ```bash
-python script/create_pointnav_dataset.py
+python3 scripts/create_pointnav_dataset.py
 ```
 We are now ready to run data collection. The following command will run the data collection procedure for
 Annawan, following the specifications of the paper 
