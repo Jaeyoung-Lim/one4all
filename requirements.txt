@@ -2,8 +2,7 @@ pandas==1.4.2
 albumentations==1.1.0
 networkx==2.8.2
 rich==12.4.4
-# Submitit with experimental branch
-git+https://github.com/facebookincubator/submitit@escape_all#egg=submitit
+submitit==1.4.5
 hydra-core==1.2.0
 hydra-colorlog==1.2.0
 # Submitit launcher
